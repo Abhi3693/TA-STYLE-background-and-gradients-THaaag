@@ -55,56 +55,59 @@ table {
 *::after {
     box-sizing: border-box;
 }
-
-/* hero */
-
-.hero {
+body {
     background-image: url(../media/bg1.jpeg) ;
     background-size: cover;
     padding: 50px 0;
+    background-attachment: fixed;
 }
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* header */
+
 .heading {
     font-size: 48px;
-    color: white;
+    font-weight: 700px;
     color: #ffffff;
     text-transform: capitalize;
     text-align: center;
     padding: 20px 0;
     margin-bottom: 50px;
 }
+
+/* hero */
+
 .box-container {
-    display: flex;
-    justify-content: space-around;
     margin-bottom: 50px;
 }
 .box {
     height: 300px;
     width: 30%;
     border-radius: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 p {
     font-size: 20px;
     font-weight: 700;
     text-transform: capitalize;
 }
-.box p {
-    margin-top: 20px;
-}
+
 .box-1 {
     background-color: rgb(254,2,73);
 }
 .box-2 {
-    background-image: linear-gradient(to right, rgb(44,42,34)5%,rgb(254,2,73));
+    background-image: linear-gradient(to right, #000,rgb(254,2,73));
     
 }
 .box-3 {
-    background-image: radial-gradient(rgb(254,2,73), rgb(44,42,34)95%);
+    background-image: radial-gradient(rgb(254,2,73), #000);
 }
 .big-box {
-    background:  linear-gradient( to left top, rgba(254, 2, 73, 0.5), rgba(44, 42, 34, 0.5) ), url(../media/bg2.jpeg), no-repeat;
+    background:  linear-gradient( to left top, rgba(237, 20, 62, 0.5), black
+    ), url(../media/bg2.jpeg), no-repeat;
     background-size: cover;
     width: 80%;
     height: 400px;
